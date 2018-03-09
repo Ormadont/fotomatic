@@ -12,6 +12,10 @@ html {
 
 .center {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .button {
@@ -223,25 +227,41 @@ header .mobile {
 }
 
 .feature {
+  /* width: 50%; */
   flex: 1;
-  padding: 2rem;
   margin: 0px 1.1875rem;
   background-color: white;
   height: 635px;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  flex-direction: column;
 }
 
 .feature .image-container {
-  max-height: 65%;
+  height: 65%;
+  width: 90%;
+  margin: 2rem 2rem 0 2rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
 }
 
 .feature img {
-  max-width: 90%;
-  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 #features-section .content {
   height: 187px;
-  margin-top: 2.5rem;
+  padding: 0 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .feature h2 {
@@ -310,9 +330,20 @@ header .mobile {
 }
 
 #filters-section .images-container {
-  max-width: 100%;
+  display: flex;
   padding: 0 1%;
 }
+
+#filters-section .image-container {
+  
+}
+
+#filters-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 
 @media only screen and (max-width: 760px) {
   #filters-section {
@@ -340,7 +371,7 @@ header .mobile {
   }
 
   #filters-section .extra {
-    display: none;
+
   }
 }
 
